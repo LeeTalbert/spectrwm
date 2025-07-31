@@ -17,6 +17,9 @@ BuildRequires:  lib64xcb-icccm4
 BuildRequires:  lib64xcb-util-devel
 BuildRequires:  lib64xcb-util-keysyms-devel
 BuildRequires:  lib64xcb-util-wm-devel
+BuildRequires:  pkgconfig(xcursor)
+BuildRequires:  pkgconfig(fontconfig)
+BuildRequires:  pkgconfig(xft)
 
 Recommends:     dmenu
 
