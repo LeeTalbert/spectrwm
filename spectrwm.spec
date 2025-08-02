@@ -21,6 +21,15 @@ BuildRequires:  pkgconfig(xcursor)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(xft)
 
+Requires:  fontconfig
+Requires:  glibc
+Requires:  lib64bsd0
+Requires:  lib64x11-xcb1
+Requires:  lib64xcursor1
+Requires:  lib64xft2
+Requires:  lib64xcb-util1
+Requires:  lib64xcb-util-keysyms1
+
 Recommends:     dmenu
 
 %description
