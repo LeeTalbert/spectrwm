@@ -1,9 +1,9 @@
 %global debug_package %{nil}
 %define uname SPECTRWM
-%define uver 3_6_0
+%define uver 3_7_0
 
 Name:		spectrwm
-Version:	3.6.0
+Version:	3.7.0
 Release:	1
 Source0:	https://github.com/conformal/spectrwm/archive/refs/tags/%{uname}_%{uver}.tar.gz
 Summary:	spectrwm is a small, dynamic tiling and reparenting window manager for X11
@@ -12,11 +12,11 @@ License:	ISC
 Group:		Graphical Desktop
 
 BuildRequires:	make
-BuildRequires:  lib64bsd-devel
+BuildRequires:  pkgconfig(libbsd)
 BuildRequires:  lib64xcb-icccm4
-BuildRequires:  lib64xcb-util-devel
-BuildRequires:  lib64xcb-util-keysyms-devel
-BuildRequires:  lib64xcb-util-wm-devel
+BuildRequires:  pkgconfig(xcb-util)
+BuildRequires:  pkgconfig(xcb-keysyms)
+BuildRequires:  pkgconfig(xcb-icccm)
 BuildRequires:  pkgconfig(xcursor)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(xft)
