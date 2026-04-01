@@ -13,7 +13,7 @@ Group:		Graphical Desktop
 
 BuildRequires:	make
 BuildRequires:  pkgconfig(libbsd)
-BuildRequires:  lib64xcb-icccm4
+BuildRequires:  %{_lib}xcb-icccm4
 BuildRequires:  pkgconfig(xcb-util)
 BuildRequires:  pkgconfig(xcb-keysyms)
 BuildRequires:  pkgconfig(xcb-icccm)
@@ -23,12 +23,12 @@ BuildRequires:  pkgconfig(xft)
 
 Requires:  fontconfig
 Requires:  glibc
-Requires:  lib64bsd0
-Requires:  lib64x11-xcb1
-Requires:  lib64xcursor1
-Requires:  lib64xft2
-Requires:  lib64xcb-util1
-Requires:  lib64xcb-util-keysyms1
+Requires:  %{_lib}bsd0
+Requires:  %{_lib}x11-xcb1
+Requires:  %{_lib}xcursor1
+Requires:  %{_lib}xft2
+Requires:  %{_lib}xcb-util1
+Requires:  %{_lib}xcb-util-keysyms1
 
 Recommends:     dmenu
 
